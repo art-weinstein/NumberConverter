@@ -18,6 +18,10 @@ namespace NumberConverter.Models
     public static string TranslateNumber(string userInput)
     {
       int number = int.Parse(userInput);
+      // if (number <=99) {
+      //   string result = translateToNinetyNine[number] + translateToNineteen[number];
+      //   return result;
+      // }
       if (number <= 19) {
         string result = translateToNineteen[number];
         return result;
